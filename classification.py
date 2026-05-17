@@ -2,11 +2,10 @@ from sklearn.datasets import fetch_openml
 
 #fetching the MNIST dataset from OpenLM.org
 
-mnist = fetch_openml('minst_784', as_frame = False)
+mnist = fetch_openml('mnist_784', as_frame = False)
 
-X, y = minst.data, minst.target
+X, y = mnist.data, mnist.target
 
 print("Shape of the minst dataset: \n", X.shape)
-print("\nInfo of the minst dataset: \n", X.info())
-print("\nDescription of the minst dataset: \n", X.describe())
-print("\nMinst dataset: \n", X.head())
+
+print("\nX: \n", X)
