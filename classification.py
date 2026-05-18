@@ -24,5 +24,15 @@ def plot_digit(image_data):
 some_digit = X[0]
 plot_digit(some_digit)
 plt.show()
+print("Digit is: \t", y[0])
+
+#splitting the training and testing sets 
+#since mnist already splited it 
+X_train, X_test, y_train, y_test = X[:60000], X[60000:], y[:60000], y[60000:]
+
+
+
+
+
 
 
