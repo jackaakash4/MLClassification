@@ -30,6 +30,9 @@ print("Digit is: \t", y[0])
 #since mnist already splited it 
 X_train, X_test, y_train, y_test = X[:60000], X[60000:], y[:60000], y[60000:]
 
+#Training a binary classifiers
+
+
 
 
 
