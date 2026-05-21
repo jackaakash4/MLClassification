@@ -52,6 +52,15 @@ print("Is it 5 ?", is5)
 
 #since it predited right
 #now measure the performance measure
+#using cross_val_score() to measure this classifier
+#it uses k-fold cross-validation with three folds
+#splitting the training set to k folds(in this case three)
+#then training the model k times, holding out a different fold each time for evaluation
+
+from sklearn.model_selection import cross_val_score
+print("Cross value score of SGD classifier is : \t", cross_val_score(sgd_clf, X_train, y_train_5, cv = 3, scoring = 'accuracy'))
+
+
 
 
 
